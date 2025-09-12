@@ -1,0 +1,12 @@
+streamlit
+openai
+pandas
+plotly
+pytesseract
+opencv-python
+Pillow
+pdf2image
+docx
+yagmail
+requests
+python-docx
