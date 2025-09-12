@@ -10,3 +10,4 @@ docx
 yagmail
 requests
 python-docx
+python-dotenv
