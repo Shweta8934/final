@@ -60,29 +60,6 @@ def get_weekly_summary(student_name, grade=None):
     )
 
 
-# ----------------- SEND EMAIL -----------------
-# def send_weekly_email(student_name):
-#     df = get_weekly_summary(student_name)
-#     if df is None or student_name not in PARENT_EMAILS:
-#         print(f"No data to send or email not configured for {student_name}")
-#         return
-
-#     email_body = f"Hello,\n\nHere’s the weekly learning summary for {student_name}:\n\n"
-#     email_body += df.to_string(index=False)
-#     email_body += "\n\nKeep encouraging your child to practice daily!\n\nBest regards,\nAI Tutor Team"
-
-#     try:
-#         yag = yagmail.SMTP(SMTP_EMAIL, SMTP_PASSWORD)
-#         yag.send(
-#             to=PARENT_EMAILS[student_name],
-#             subject=f"Weekly Learning Summary for {student_name}",
-#             contents=email_body,
-#         )
-#         print(f"✅ Email sent to {student_name}'s parent")
-#     except Exception as e:
-#         print(f"❌ Failed to send email: {e}")
-
-
 def send_weekly_email(student_name):
     df = get_weekly_summary(student_name)
     if df is None or student_name not in PARENT_EMAILS:

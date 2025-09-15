@@ -11,3 +11,5 @@ yagmail
 requests
 python-docx
 python-dotenv
+tesseract-ocr
+libtesseract-dev
